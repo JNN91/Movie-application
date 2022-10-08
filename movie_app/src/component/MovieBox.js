@@ -2,6 +2,15 @@ import React from 'react';
 
 const IMG_API = "https://image.tmdb.org/t/p/w500";
 
+const setClassRate = (vote) =>{
+    if (vote >= 9) {
+        return "yellow";
+    } else if (vote >= 5) {
+        return "red";
+    } else {
+        return "blue";
+    }
+};
 
 const Movie=({title, poster_path, overview, vote_average}) =>(
     <div 
