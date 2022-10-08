@@ -24,7 +24,15 @@ const getMovie = (API) => {
     });
 }
 
- 
+ const handleSubmit = (e) =>{
+  e.preventDefault();
+   
+  fetch(SEARCH_API + searchItem)
+    .then((res)=>res.json())
+    .then((data) => {
+        setMovie(data.results);
+ });
+   setSearchItem('');
 
  }
 
