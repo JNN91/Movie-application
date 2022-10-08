@@ -66,4 +66,12 @@ header {
     letter-spacing: 0.5px;
 }
 
+.movie-info h3 {
+    margin: 0;
+}
 
+.tag {
+    background-color: #3ce907;
+    border-radius: 4px;
+    padding: 0;
+}
